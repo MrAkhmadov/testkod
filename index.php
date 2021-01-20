@@ -159,4 +159,14 @@ if ($tx == "Manzil") {
     ]);
 }
 
+if ($tx == "Kurslar") {
+    bot ('sendMessage', [
+        'chat_id' => $cid,
+        'text' => "*Aynan qaysi yo'nalishdagi kurslarimiz haqida ma'lumot kerak*",
+        'parse_mode' => 'markdown',
+        'reply_markup' => $kurs,
+    ]);
+}
+
+
 ?>
