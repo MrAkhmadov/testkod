@@ -83,7 +83,7 @@
     $cencel  = "Bekor qilish";
 
     $keys = json_encode([
-        'resize' => true,
+        'resize_keyboard' => true,
         'keyboard' => [
             [['text' => "Kurslar"],],
             [['text' => "Biz haqimizda"], ['text' => "Aloqa"],],
@@ -126,7 +126,7 @@
     if ($tx == "/start") {
         bot ('sendMessage', [
             'chat_id' => $cid,
-            'text' => "Assalomu alaykum, $name!* Sizga qanday yordam bera olishim mumkin?",
+            'text' => "*Assalomu alaykum, $name!* Sizga qanday yordam bera olishim mumkin?",
             'parse_mode' => 'markdown',
             'reply_markup' => $keys,
         ]);
