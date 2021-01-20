@@ -168,5 +168,50 @@ if ($tx == "Kurslar") {
     ]);
 }
 
+if ($tx == "Front End") {
+    bot ('sendMessage', [
+        'chat_id' => $cid, 
+        'text' => "*Bu yerga Front End bo'yicha kurslar haqida ma'lumot olishingiz mumkin*",
+        'parse_mode' => 'markdown',
+        'reply_markup' => $kurs,
+    ]);
+}
+
+if ($tx == "Back End") {
+    bot ('sendMessage', [
+        'chat_id' => $cid, 
+        'text' => "*Bu yerga Back End bo'yicha kurslar haqida ma'lumot olishingiz mumkin*",
+        'parse_mode' => 'markdown',
+        'reply_markup' => $kurs,
+    ]);
+}
+
+if ($tx == "Python") {
+    bot ('sendMessage', [
+        'chat_id' => $cid, 
+        'text' => "*Bu yerga Python bo'yicha kurslar haqida ma'lumot olishingiz mumkin*",
+        'parse_mode' => 'markdown',
+        'reply_markup' => $kurs,
+    ]);
+}
+
+if ($tx == "Go lang") {
+    bot ('sendMessage', [
+        'chat_id' => $cid, 
+        'text' => "*Bu yerga Go lang bo'yicha kurslar haqida ma'lumot olishingiz mumkin*",
+        'parse_mode' => 'markdown',
+        'reply_markup' => $kurs,
+    ]);
+}
+
+if ($tx == "orqaga qaytish") {
+    bot ('sendMessage', [
+        'chat_id' => $cid,
+        'text' => "Sizga qanday yordam bera olishim mumkin",
+        'parse_mode' =>  'markdown',
+        'reply_markup' => $keys,
+    ]);
+ }
+
 
 ?>
