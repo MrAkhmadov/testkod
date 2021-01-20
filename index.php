@@ -140,4 +140,14 @@ if ($tx == "Biz haqimizda") {
         'reply_markup' => $keys,
     ]);   
 }
+
+if ($tx == "Aloqa") {
+    bot('sendMessage', [
+        'chat_id' => $cid,
+        'text' => "+998 93 906 99 14",
+        'parse_mode' => 'markdown',
+        'reply_markup' => $keys,
+    ]);
+}
+
 ?>
