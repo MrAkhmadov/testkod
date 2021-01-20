@@ -131,4 +131,13 @@
             'reply_markup' => $keys,
         ]);
     }
+
+if ($tx == "Biz haqimizda") {
+    bot ('sendMessage', [
+        'chat_id' => $cid,
+        'text' => "Salom bu yerga biz haqimizdagi matnlar yoziladi",
+        'parse_mode' => 'markdown',
+        'reply_markup' => $keys,
+    ]);   
+}
 ?>
