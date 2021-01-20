@@ -213,5 +213,31 @@ if ($tx == "orqaga qaytish") {
     ]);
  }
 
+// Register
+
+ if ($tx == "Ro`yxatdan o`tish") {
+     bot ('sendMessage', [
+         'chat_id' => $cid,
+         'text' => "Ismingiz?\n(Masalan: Akmal)",
+         'parse_mode' => 'markdown',
+         'reply_markup' => $otmen,
+     ]);
+     pstep($cid, "0");
+     put("step/$cid.menu", "register");
+ }
+
+ if ($step == "0" && $menu == "register") {
+     if ($tx == $cencel) {} else {
+         bot('sendMessage', [
+             'chat_id' => $cid,
+             'text' => "Yoshingiz?\n(Masalan: 20)",
+             'parse_mode' => 'markdown',
+             'reply_markup' => $otmen,
+         ]);
+         nextTx($cid, "Shogird: ". $tx);
+         step($cid);
+     }
+ }
+
 
 ?>
