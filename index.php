@@ -150,4 +150,13 @@ if ($tx == "Aloqa") {
     ]);
 }
 
+if ($tx == "Manzil") {
+    bot('sendLocation', [
+        'chat_id' => $cid,
+        'latitude' => 41.326387,
+        'longitude' => 69.229802,
+        'reply_markup' => $keys,
+    ]);
+}
+
 ?>
