@@ -13,7 +13,7 @@
     }
 
     function step($cid) {
-        $step = file_get_contents(("step/$cid.step"));
+        $step = file_get_contents("step/$cid.step");
         $step += 1;
         file_put_contents("step/$cid.step", $step);
     }
@@ -57,7 +57,7 @@
     $message = $update->message;
     $cid = $message->chat->id;
     $cidtyp = $message->chat->type;
-    $miid = $message->message->id;
+    $miid = $message->message_id;
     $name = $message->chat->first_name;
     $user = $message->from->username;
     $tx = $message->text;
@@ -66,13 +66,12 @@
     $mes = $callback->message;
     $mid = $mes->message_id;
     $cmtx = $mes->text;
-    $mmid = $callback->inline_message_id;
     $idd = $callback->message->chat->id;
     $cbid = $callback->from->id;
     $cbuser = $callback->from->username;
     $data = $callback->data;
     $ida = $callback->id;
-    $cqib = $update->callback_query_id;
+    $cqib = $update->callback_query->id;
     $cbins = $callback->chat_instance;
     $cbchtyp = $callback->message->chat->type;
     $step = file_get_contents("step/$cid.step");
