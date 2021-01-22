@@ -141,11 +141,11 @@ if ($tx == "Biz haqimizda") {
     ]);   
 }
 
-if ($tx == "Aloqa") {
+if ($tx == "📞Aloqa") {
     bot('sendMessage', [
         'chat_id' => $cid,
-        'text' => "+998 93 906 99 14",
-        'parse_mode' => 'markdown',
+        'text' => "<a href='https://t.me/yulduzoy_sultonova'>👥Bizning Guruh</a> <br> <a href='https://t.me/valiolog_konsultant'>👥Bizning Kanal</a>",
+        'parse_mode' => 'html',
         'reply_markup' => $keys,
     ]);
 }
