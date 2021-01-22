@@ -187,10 +187,9 @@ if ($tx == "💉Salomatlik kansepsiyasi") {
 }
 
 if ($tx == "1 - Qoida") {
-    bot ('sendMessage', [
+    bot ('sendPhoto', [
         'chat_id' => $cid, 
-        'text' => "*Bu yerga Front End bo'yicha kurslar haqida ma'lumot olishingiz mumkin*",
-        'parse_mode' => 'markdown',
+        'file_id' => "https://t.me/psdzone/1000",
         'reply_markup' => $kurs,
     ]);
 }
