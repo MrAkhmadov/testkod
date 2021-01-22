@@ -162,13 +162,17 @@ if ($tx == "Manzil") {
 if ($tx == "💉Salomatlik kansepsiyasi") {
     bot ('sendMessage', [
         'chat_id' => $cid,
-        'text' => "*Бир муддат ўйлаб кўрдингизми❓
-        Соғлик нима❓
-        Нима учун касал бўляпмиз❓
-        Касаллик қаердан келиб чиқяпти❓
-        Ва УЗОҚ  ЯШАШ ва СОҒЛОМ ҚАРИШ СИРЛАРИ НИМА❓❓
+        'text' => "Bir muddat o'ylab ko'rganmisiz❓
+        Sog'liq nima❓
+        Nima uchun kasal bo'lyapmiz❓
+        Kasallik qayerdan kelib chiqyapti❓
+        Va UZOQ YASHASH VA SOG'LOM QARISH SIRLARI NIMA❓❓
         
-        Оддий 5 та ОЛТИН коидага амал қилишни ўрганинг  ва  соглом булинг🙏
+        Oddiy 5 ta Oddiy 5 ta *OLTIN* qoidaga amal qilishni o'rganing va sog'lom bo'ling🙏
+        
+        5 ta oltin qoida👇👇
+        
+      
         
         5 та ОЛТИН КОИДА👇👇
         
@@ -180,7 +184,7 @@ if ($tx == "💉Salomatlik kansepsiyasi") {
         
         💥4-ОРГАНИЗМНИ ТОЗАЛАШ (йилига 2 - 3 марта)
         
-        💥5-ХАРАКАТ (5 км ва ундан ортик юриш)*",
+        💥5-ХАРАКАТ (5 км ва ундан ортик юриш)",
         'parse_mode' => 'markdown',
         'reply_markup' => $kurs,
     ]);
