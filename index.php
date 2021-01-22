@@ -189,7 +189,7 @@ if ($tx == "💉Salomatlik kansepsiyasi") {
 if ($tx == "1 - Qoida") {
     bot ('sendPhoto', [
         'chat_id' => $cid, 
-        'file_id' => "1000",
+        'photo' => "https://t.me/psdzone/1000",
         'reply_markup' => $kurs,
     ]);
 }
