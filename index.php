@@ -107,9 +107,9 @@
     $kurs = json_encode([
         'resize_keyboard' => true,
         'keyboard' => [
-            [['text' => "Front End"], ['text' => "Back End"],],
-            [['text' => "Python"], ['text' => "Go lang"],],
-            [['text' => "orqaga qaytish"]],
+            [['text' => "1 - Qoida"], ['text' => "2 - Qoida"],],
+            [['text' => "3 - Qoida"], ['text' => "4 - Qoida"],],
+            [['text' => "5 - Qoida"], ['text' => "orqaga qaytish"],],
         ]
     ]);
 
@@ -162,21 +162,17 @@ if ($tx == "Manzil") {
 if ($tx == "💉Salomatlik kansepsiyasi") {
     bot ('sendMessage', [
         'chat_id' => $cid,
-        'text' => "Bir muddat o'ylab ko'rganmisiz❓
-        Sog'liq nima❓
-        Nima uchun kasal bo'lyapmiz❓
-        Kasallik qayerdan kelib chiqyapti❓
-        Va UZOQ YASHASH VA SOG'LOM QARISH SIRLARI NIMA❓❓
+        'text' => "Бир муддат ўйлаб кўрдингизми❓
+        Соғлик нима❓
+        Нима учун касал бўляпмиз❓
+        Касаллик қаердан келиб чиқяпти❓
+        Ва УЗОҚ  ЯШАШ ва СОҒЛОМ ҚАРИШ СИРЛАРИ НИМА❓❓
         
-        Oddiy 5 ta Oddiy 5 ta *OLTIN* qoidaga amal qilishni o'rganing va sog'lom bo'ling🙏
-        
-        5 ta oltin qoida👇👇
-        
-      
+        Оддий 5 та *ОЛТИН* коидага амал қилишни ўрганинг  ва  соглом булинг🙏
         
         5 та ОЛТИН КОИДА👇👇
         
-        💥1-ПСИХОЛОГИЯ, РУХИЙ ХОЛАТНИ ИДОРА КИЛИШ.
+        *💥1-ПСИХОЛОГИЯ, РУХИЙ ХОЛАТНИ ИДОРА КИЛИШ.
         
         💥2-РАЦИОНАЛ, 5 МАХАЛ ТЎҒРИ ОВҚАТЛАНИШ.
         
@@ -184,13 +180,13 @@ if ($tx == "💉Salomatlik kansepsiyasi") {
         
         💥4-ОРГАНИЗМНИ ТОЗАЛАШ (йилига 2 - 3 марта)
         
-        💥5-ХАРАКАТ (5 км ва ундан ортик юриш)",
+        💥5-ХАРАКАТ (5 км ва ундан ортик юриш)*",
         'parse_mode' => 'markdown',
         'reply_markup' => $kurs,
     ]);
 }
 
-if ($tx == "Front End") {
+if ($tx == "1 - Qoida") {
     bot ('sendMessage', [
         'chat_id' => $cid, 
         'text' => "*Bu yerga Front End bo'yicha kurslar haqida ma'lumot olishingiz mumkin*",
@@ -199,7 +195,7 @@ if ($tx == "Front End") {
     ]);
 }
 
-if ($tx == "Back End") {
+if ($tx == "2 - Qoida") {
     bot ('sendMessage', [
         'chat_id' => $cid, 
         'text' => "*Bu yerga Back End bo'yicha kurslar haqida ma'lumot olishingiz mumkin*",
@@ -208,7 +204,7 @@ if ($tx == "Back End") {
     ]);
 }
 
-if ($tx == "Python") {
+if ($tx == "3 - Qoida") {
     bot ('sendMessage', [
         'chat_id' => $cid, 
         'text' => "*Bu yerga Python bo'yicha kurslar haqida ma'lumot olishingiz mumkin*",
@@ -217,7 +213,16 @@ if ($tx == "Python") {
     ]);
 }
 
-if ($tx == "Go lang") {
+if ($tx == "4 - Qoida") {
+    bot ('sendMessage', [
+        'chat_id' => $cid, 
+        'text' => "*Bu yerga Go lang bo'yicha kurslar haqida ma'lumot olishingiz mumkin*",
+        'parse_mode' => 'markdown',
+        'reply_markup' => $kurs,
+    ]);
+}
+
+if ($tx == "5 - Qoida") {
     bot ('sendMessage', [
         'chat_id' => $cid, 
         'text' => "*Bu yerga Go lang bo'yicha kurslar haqida ma'lumot olishingiz mumkin*",
