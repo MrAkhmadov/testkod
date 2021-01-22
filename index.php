@@ -213,7 +213,7 @@ if ($tx == "orqaga qaytish") {
     ]);
  }
 
-// Register
+// Register start
 
   
 
