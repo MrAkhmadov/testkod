@@ -190,6 +190,7 @@ if ($tx == "1 - Qoida") {
     bot ('sendPhoto', [
         'chat_id' => $cid, 
         'photo' => "https://t.me/valiolog_konsultant/8",
+        'caption' => "https://t.me/valiolog_konsultant/8",
         'reply_markup' => $kurs,
     ]);
 }
